@@ -19,7 +19,7 @@
 			 * @return {Boolean} [返回true代表是银行卡号,否则为false]
 			 */
 			isBankNumber:function(str){
-				return /\d{16,19}/.test(str);
+				return /^\d{16,19}$/.test(str);
 			},
 			/**
 			 * 是否是密码
